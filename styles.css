@@ -1,0 +1,321 @@
+/* Importation des polices */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Style global */
+
+
+body {
+    background-color: #DFB6B2;
+    margin: 0;
+    padding: 0;
+    display:block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+/* Banner */
+.banner {
+    margin: auto;
+    padding-left: 100px;
+    padding-right: 100px;
+    p
+    flex-direction: column; /* Disposition verticale pour les éléments */
+    justify-content: center; /* Centrer le contenu à l'intérieur du rectangle */
+    align-items: center;
+    background-color: #dfb6b2;
+    padding: 100px ,200px;
+    border-radius: 100px;
+    width: 100%; /* Limiter la largeur */
+    max-width: 1000px; /* Largeur maximale du rectangle */
+    box-shadow: 0 0 15px #854F6C;
+    color: white;
+}
+
+
+
+
+/* Header */
+header {
+    background-color: #522B5B;
+    color: white;
+    padding: 40px 0;
+    animation: fadeIn 1s ease-out;
+}
+.photo-container {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 40px #854F6C;
+    margin-right: 20px; /* Espacement entre la photo et le texte */
+    margin-bottom: 20px; /* Espacement sous la photo */
+}
+
+/* Tech Image */
+.tech-maphoto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Section générale */
+section {
+    padding: 60px 0;
+}
+h1{ color: white;
+    box-shadow: 0 0 40px #854F6C;
+    border-radius: 40px;}
+
+h2 {
+    font-size: 2rem;
+    color: #522B5B;
+    margin-bottom: 20px;
+    font-weight: 600;
+    animation: slideIn 1s ease-out;
+}
+
+/* Sur Moi Section */
+#about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #777;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    animation: fadeIn 1.5s ease-out;
+}
+about h2{#
+    padding-top: 20px;
+    color: #654f6c;
+}
+
+
+#about .row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#about .col-2 {
+    text-align: center;
+}
+
+#about img {
+    width: 80px;
+    height: 80px;
+    transition: transform 0.3s ease;
+}
+
+#about img:hover {
+    transform: scale(1.2);
+}
+.btn-accent {
+    background-color: #854F6C !important; /* Couleur personnalisée */
+    color: white !important;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: none;
+}
+.btn:hover {
+    background-color: #522B5B;
+    color: #fff;
+    padding-top: 10px;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+
+
+/* Portfolio Section */
+#portfolio .card {
+    transition: transform 0.3s ease;
+}
+#portfolio .h2{
+    color: #522B5B;;
+}
+
+#portfolio .card:hover {
+    transform: scale(1.05);
+}
+
+#portfolio .card img {
+    max-height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+#portfolio .card:hover img {
+    transform: scale(1.05);
+}
+
+/* Effet sur les cartes du portfolio */
+#portfolio .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation fluide */
+}
+
+#portfolio .card:hover {
+    transform: scale(1.05); /* Agrandissement léger de la carte */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Ajout d'une ombre pour l'effet */
+}
+
+/* Contact Section */
+#contact {
+    background-color: #DFB6B2;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 10px;
+    animation: slideIn 1s ease-out;
+}
+
+#contact h2 {
+    color: #522B5B;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#contact .btn-accent {
+    background-color: #854f6c;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+#contact .btn-accent:hover {
+    background-color: #DFB6B2;
+}
+
+/* Social Icons */
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+.social-icons img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Footer */
+footer {
+    background-color: #5A639C;
+    color: white;
+    padding: 40px 20px;
+    font-size: 1rem;
+    text-align: center;
+    animation: fadeIn 2s ease-out;
+}
+
+/* Animation de FadeIn */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Animation de SlideIn */
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;}
+}
+/* Structure de base de la flèche */
+/* Conteneur de la flèche */
+.scroll-down {
+    width: 45px;
+    height: 70px;
+    border: #fff solid 2px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute; /* Pour la centrer dans l'écran */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: bounce 2s infinite ease-in-out;
+}
+
+/* Flèches */
+.arrow-down span {
+    background-color: #fff;
+    width: 5px;
+    height: 15px;
+    border: none;
+    border-right: 2px solid #fff;
+    border-top: 2px solid #fff;
+    transform: rotate(135deg);
+    margin: 3px 0; /* Espace entre les flèches */
+    animation: moveArrow 2s infinite ease-in-out;
+}
+
+/* Animation de mouvement des flèches (rebond vertical) */
+@keyframes moveArrow {
+    0% {
+        transform: translateY(0) rotate(135deg);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(10px) rotate(135deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(20px) rotate(135deg);
+        opacity: 0;
+    }
+}
+
+/* Animation de rebond pour le conteneur (effet visuel de mouvement) */
+@keyframes bounce {
+    0%, 100% {
+        transform: translate(-50%, -50%) translateY(0);
+    }
+    50% {
+        transform: translate(-50%, -50%) translateY(10px);
+    }
+}
+
+
+@keyframes text-animation {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+p {
+    animation: text-animation 1.5s ease-out;
+}
+
+

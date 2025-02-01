@@ -1,0 +1,133 @@
+/* Blog Section */
+#blog {
+    padding: 40px 20px;
+    background-color: var(--couleur-quaternaire);
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+#blog h2 {
+    font-size: 36px;
+    color: var(--couleur-primaire);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#blog p {
+    font-size: 18px;
+    color: #555;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Recent Articles */
+.recent-articles {
+    margin-bottom: 30px;
+}
+
+.recent-articles h3 {
+    font-size: 24px;
+    color: var(--couleur-tertiaire);
+    margin-bottom: 15px;
+}
+
+.recent-articles ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.recent-articles li {
+    margin-bottom: 10px;
+}
+
+.recent-articles a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.recent-articles a:hover {
+    color: var(--couleur-primaire);
+}
+
+/* Blog Categories */
+.blog-categories {
+    margin-bottom: 30px;
+}
+
+.blog-categories h3 {
+    font-size: 24px;
+    color: var(--couleur-tertiaire);
+    margin-bottom: 15px;
+}
+
+.blog-categories ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.blog-categories li {
+    margin-bottom: 10px;
+}
+
+.blog-categories a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.blog-categories a:hover {
+    color: var(--couleur-primaire);
+}
+
+/* Subscribe Section */
+.subscribe {
+    text-align: center;
+}
+
+.subscribe h3 {
+    font-size: 24px;
+    color: var(--couleur-tertiaire);
+    margin-bottom: 15px;
+}
+
+.subscribe form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.subscribe input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    margin-right: 10px;
+    width: 250px;
+    transition: all 0.3s ease;
+}
+
+.subscribe input[type="email"]:focus {
+    border-color: var(--couleur-primaire);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.subscribe button {
+    background-color: var(--couleur-tertiaire);
+    color: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.subscribe button:hover {
+    background-color: var(--couleur-primaire);
+}
+
