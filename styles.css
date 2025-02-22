@@ -158,8 +158,9 @@ about h2{#
 }
 
 #portfolio .card img {
-    max-height: 200px;
-    object-fit: cover;
+    width: 100%;            /* La largeur de l'image occupe toute la largeur du conteneur */
+    height: 200px;          /* Fixe la hauteur à 200px pour uniformiser la taille des images */
+    object-fit: cover;      /* L'image s'ajuste pour couvrir tout l'espace sans se déformer */
     transition: transform 0.3s ease;
 }
 
@@ -176,6 +177,7 @@ about h2{#
     transform: scale(1.05); /* Agrandissement léger de la carte */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Ajout d'une ombre pour l'effet */
 }
+
 
 /* Contact Section */
 #contact {
